@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0"
+          name="viewport">
+    <!--<link rel="stylesheet/less" href="less/cannon.less" type="text/css" />-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>-->
+    <link href="css/cannon.css" rel="stylesheet" type="text/css"/>
+    <title>가상 실험</title>
+</head>
+
+<body>
+
+<div class="contentsArea">
+    <img class="cannonImg" src="images/cannon/cannonIMG.png" alt="">
+
+    <div class="cannonArea">
+        <div class="cannonLineArea">
+            <div class="line increase" id="increaseLine"></div>
+            <div class="line descend" id="descendLine"></div>
+        </div>
+        <img alt="" class="cannonball" id="cannonball" src="images/cannon/colorRound_top.png"/>
+    </div>
+
+    <div class="cannonLineArea_comment">임의의 <br />지점 세 곳을 <br />클릭하세요.</div>
+
+    <ul class="cannonLinePins"></ul>
+
+    <div class="cannonGraph">
+        <div class="graphTitleTxt"><p>A 지점</p></div>
+        <div class="graphTitleLine"></div>
+        <ul class="graphContents">
+            <li class="colorBar" id="distance">
+                <div>
+                    <span class="num">47</span>
+                    <span class="NMyeongjoEB">m</span>
+                </div>
+            </li>
+            <li class="colorBar" id="kineticEnergy">
+                <div>
+                    <span class="num">77</span>
+                    <span class="NMyeongjoEB">J</span>
+                </div>
+            </li>
+            <li class="colorBar" id="locationEnergy">
+                <div>
+                    <span class="num">95</span>
+                    <span class="NMyeongjoEB">J</span>
+                </div>
+            </li>
+            <li class="colorBar" id="mechanicalEnergy">
+                <div>
+                    <span class="num">47</span>
+                    <span class="NMyeongjoEB">J</span>
+                </div>
+            </li>
+        </ul>
+        <ul class="cannonGraph_text">
+            <li>높이</li>
+            <li>운동<br/>에너지</li>
+            <li>위치<br/>에너지</li>
+            <li>역학적<br/>에너지</li>
+        </ul>
+    </div>
+    <div class="underBar">
+        <div class="rangeInputContainer">
+            <input id="rangeInput_velocity" type="range"/>
+        </div>
+
+        <div class="numberInputContainer">
+            <input id="numberInput_velocity" max="20" min="10" step="1" type="number" value="15"/>
+            <div class="numberInputContainer_unit"></div>
+        </div>
+        <div id="velocityArrow" class="indicator inputIndicator"></div>
+
+        <div class="rangeInputContainer">
+            <input id="rangeInput_mass" max="11" min="1" step="1" type="range" value="6"/>
+        </div>
+        <div class="numberInputContainer">
+            <input id="numberInput_mass" max="11" min="1" step="1" type="number" value="6"/>
+            <div class="numberInputContainer_unit"></div>
+        </div>
+        <div id="massArrow" class="indicator inputIndicator"></div>
+
+        <ul class="underBar_Btn">
+            <li class="playBtn"></li>
+            <!--<li class="stopBtn on"></li>-->
+            <li class="replayBtn on"></li>
+        </ul>
+    </div>
+
+    <div class="commentBox">
+        <div class="commentBox_inner">
+            <p></p>
+            <!--<p></p>-->
+        </div>
+        <div class="commentNextBtn"></div>
+    </div>
+    <p class="guideText">&#9654; 버튼을 누르세요</p>
+</div>
+<script src="js/$ts.min.js" type="text/javascript"></script>
+<script src="js/scale.min.js" type="text/javascript"></script>
+<script src="js/efSound.min.js" type="text/javascript"></script>
+<script src="js/commentBox.min.js" type="text/javascript"></script>
+<script src="js/clickToggle.min.js" type="text/javascript"></script>
+<script src="js/cannon/inputConnection.min.js" type="text/javascript"></script>
+<script src="js/cannon/config.min.js" type="text/javascript"></script>
+<script src="js/cannon/timer.min.js" type="text/javascript"></script>
+<script src="js/cannon/cannon.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+    }, false);
+
+</script>
+
+</body>
+</html>
